@@ -287,10 +287,11 @@
             const canvas = document.createElement('canvas');
             canvas.width = 1024; canvas.height = 256;
             const ctx = canvas.getContext('2d');
-            ctx.font = 'bold italic 90px "Times New Roman"';
+            ctx.font = 'bold italic 60px "Segoe UI", Tahoma, sans-serif';
             ctx.fillStyle = '#FFD700'; ctx.textAlign = 'center';
             ctx.shadowColor = "#FF0000"; ctx.shadowBlur = 40; 
-            ctx.fillText("Giáng sinh hạnh phúc ❄️☃️🎄🌟", 512, 130);
+            ctx.fillText("Giáng sinh", 512, 100);
+            ctx.fillText("hạnh phúc nhất khi có vợ ở bên ❄️☃️🎄🌟", 512, 180);
             const tex = new THREE.CanvasTexture(canvas);
             const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, blending: THREE.AdditiveBlending });
             titleMesh = new THREE.Mesh(new THREE.PlaneGeometry(60, 15), mat);
